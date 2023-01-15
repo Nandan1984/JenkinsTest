@@ -14,11 +14,11 @@ import cs.qa.te.utils.Constants;
 
 public class LoginPageTest extends BaseTest {
 	
-	SoftAssert softAssert = new SoftAssert();
+
 	
 	
 	// Navigate to the Login page
-	@BeforeClass(groups= {"Smoke", "Regression"}, enabled = true)
+	@BeforeClass(enabled = true)
 	public void clickToLoginLink() throws  InterruptedException{
 		
 		loginPage.clickLogin();
@@ -27,7 +27,7 @@ public class LoginPageTest extends BaseTest {
 	
 	
 	//For Language settings
-	@Test(enabled = true, priority=2)
+	@Test(enabled = true)
 	public void changeLanguageTest(){
 			String text = loginPage.getText();
 			

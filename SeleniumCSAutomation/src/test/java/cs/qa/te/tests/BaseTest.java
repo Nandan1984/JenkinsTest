@@ -23,7 +23,7 @@ public class BaseTest {
 	public NegotiationsAddOfferPage addOfferPage;
 	
 		
-	@BeforeTest(groups= {"Smoke", "Regression"})
+	@BeforeTest()
 	public void setUp() {
 		df = new DriverFactory();
 		prop = df.init_prop();
@@ -36,7 +36,7 @@ public class BaseTest {
 	
 	
 	
-	@AfterTest(groups= {"Smoke", "Regression"})
+	@AfterTest()
 	public void tearDown() {
 		driver.quit();
 	}
