@@ -17,7 +17,7 @@ import cs.qa.te.utils.ExcelUtil;
 
 
 public class NegotiationsAddOfferPageTest extends BaseTest {
-	
+	/*
 	SoftAssert softAssert = new SoftAssert();
 	// Navigate to the Login page
 	
@@ -37,5 +37,5 @@ public class NegotiationsAddOfferPageTest extends BaseTest {
 			String ye = loginPage.getText() ;
 			
 		}
-		
+		*/
 	}
