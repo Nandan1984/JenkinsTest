@@ -21,6 +21,7 @@ public class LoginPageTest extends BaseTest {
 	@BeforeClass(enabled = true)
 	public void clickToLoginLink() throws  InterruptedException{
 		
+		Thread.sleep(30000);
 		loginPage.clickLogin();
 		
 	}
