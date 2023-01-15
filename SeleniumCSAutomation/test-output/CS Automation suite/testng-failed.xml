@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CS Automation suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="LoginPage Test1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <exclude name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="cs.qa.te.tests.LoginPageTest">
+        <methods>
+          <include name="clickOnResourceListOptionsTest"/>
+          <include name="resourceOptionsListTest"/>
+        </methods>
+      </class> <!-- cs.qa.te.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- LoginPage Test1(failed) -->
+</suite> <!-- Failed suite [CS Automation suite] -->

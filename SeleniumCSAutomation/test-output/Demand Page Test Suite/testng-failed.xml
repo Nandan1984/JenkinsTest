@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Demand Page Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Demand Page Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="cs.qa.te.tests.DemandPageTest">
+        <methods>
+          <include name="importerGetSupplierDemandOfferAndRejectVolumeAndPrice"/>
+          <include name="setUp"/>
+          <include name="loginPageTest"/>
+          <include name="supplierBidForDemandOffer"/>
+          <include name="supplierGetImporterCounterOfferAndAcceptVolumeAndPrice"/>
+          <include name="tearDown"/>
+          <include name="importerApproveAndProceed"/>
+        </methods>
+      </class> <!-- cs.qa.te.tests.DemandPageTest -->
+    </classes>
+  </test> <!-- Demand Page Test(failed) -->
+</suite> <!-- Failed suite [Demand Page Test Suite] -->

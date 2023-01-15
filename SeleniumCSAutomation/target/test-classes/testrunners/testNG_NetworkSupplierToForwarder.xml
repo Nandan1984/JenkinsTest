@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+ 
+ 
+<!--  ################################### Supplier > Network > Forwarder Page Test Cases ##################################### -->
+
+<suite name="Network Supplier To Forwarder Test Suite">
+	<test name="Validate Supplier > Network > Forwarder Test">
+		<parameter name="browser" value="chrome"/>  
+		 <classes>
+			<class name="cs.qa.te.tests.NetworkSupplierToForwarderPageTest">
+	 
+	<methods>  
+			<!-- Validate Supplier > Network > Forwarder > Profile -->
+       		<include name="validateSupplierNetworkForwarderProfile"/>
+       		
+       		<!-- Validate Supplier > Network > Forwarder >Information -->
+       		<include name="validateSupplierNetworkForwarderInformation"/>
+       		
+       		<!-- Validate Supplier > Network > Forwarder >Staff -->
+       		<include name="validateSupplierNetworkForwarderStaff"/>
+       		
+       		<!-- Validate Supplier > Network > Forwarder >Notes & Certificate -->
+       		<include name="validateSupplierNetworkForwarderNotesCertificate"/>
+     </methods>
+   		
+			</class>
+		</classes>
+	</test>
+</suite>

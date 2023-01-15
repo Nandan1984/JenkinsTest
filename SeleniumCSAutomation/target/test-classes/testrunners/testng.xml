@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+ 
+ 
+<!--  ################################### All Test Suite ##################################### -->
+
+<suite name="All Test Suite">
+	<suite-files>
+	<suite-file path ="testNG_NetworkForwarderToImporter.xml" />
+	<suite-file path ="testNG_NetworkSupplierToForwarder.xml" />
+	<suite-file path ="testNG_NetworkSupplierToImporter.xml" />
+	<suite-file path ="testNG_NetworkImporterToForwarder.xml" />
+	<suite-file path ="testNG_NetworkImporterToSupplier.xml" />
+	<suite-file path ="testNG_NetworkImporterToSupplier.xml" />
+	<suite-file path ="testNG_NegotiationsAddOfferPage.xml" />
+	<suite-file path ="testNG_SettingsPage.xml" />
+	<suite-file path ="testNG_DemandPage.xml" />
+	<suite-file path ="testNG_SupplyPage.xml" />
+	<suite-file path ="testNG_PriceCalculatorPage.xml" />
+	<suite-file path ="teestNG_OceanFrightPage.xml" />
+	
+	</suite-files>
+	
+</suite>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Create Offer, Specification, Documents, Instruction,  Packing List Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Create Offer, Specification, Documents, Instruction,  Packing List Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="cs.qa.te.tests.NegotiationsAddOfferPageTest">
+        <methods>
+          <include name="supplierAddProductNegotiationsSpecification"/>
+          <include name="supplierAddProductActiveDealsSpecification"/>
+          <include name="setUp"/>
+          <include name="supplierActiveDealsInstructionsCADHandelsbankenBank"/>
+          <include name="tearDown"/>
+          <include name="loginPageTest"/>
+        </methods>
+      </class> <!-- cs.qa.te.tests.NegotiationsAddOfferPageTest -->
+    </classes>
+  </test> <!-- Create Offer, Specification, Documents, Instruction,  Packing List Test(failed) -->
+</suite> <!-- Failed suite [Create Offer, Specification, Documents, Instruction,  Packing List Test Suite] -->

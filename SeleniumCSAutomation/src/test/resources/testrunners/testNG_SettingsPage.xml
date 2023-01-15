@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+ 
+ 
+<!--  ################################### Company Profile , Location And Share deal data Page Test Cases ##################################### -->
+
+
+<suite name="Company Profile , Location And Share deal data Test Suite">
+	<test name="Company Profile , Location And Share deal data Test">
+		<parameter name="browser" value="chrome"/>  
+		 <classes>
+			<class name="cs.qa.te.tests.SettingsPageTest">
+	 
+	<methods>  
+			<!-- Supplier Edit company profile -->
+       		<include name="supplierEditCompanyProfile"/>
+       		
+       		<!-- Validate edit company profile -->
+       		<include name="supplierValidateEditCompanyProfileDataWithExcel"/>
+       		
+       		<!-- Supplier upload certificate -->
+       		<include name="supplierUploadCompanyProfileCertificate"/>
+       		
+       		<!-- Supplier edit company location -->
+       		<include name="supplierEnterandEditCompanyLocation"/>
+       		
+       		<!-- Validate edit company location -->
+       		<include name="supplierValidateCompanyLocation"/>
+       		
+       		<!-- Supplier Delete company location -->
+       		<include name="supplierDeleteCompanyLocation"/>
+       		
+       		<!-- Importer Edit company profile  -->
+       		<include name="importerEditCompanyProfile"/>
+       		
+       		<!-- Validate Importer edit company profile -->
+       		<include name="importerValidateEditCompanyProfileDataWithExcel"/>
+       		
+       		<!--  Importer upload certificate -->
+       		<include name="importerUploadCompanyProfileCertificate"/>
+       		
+       		<!--  Forwarder Edit company profile  -->
+       		<include name="forwarderEditCompanyProfile"/>
+       		
+       		<!-- Validate Forwarder edit company profile  -->
+       		<include name="forwardervalidateEditCompanyProfileDataWithExcel"/>
+       		
+       		<!--  Forwarder upload certificate  -->
+       		<include name="forwarderUploadCompanyProfileCertificate"/>
+       		
+       		<!-- Supplier assign staff for All deals in Share deal data -->
+       		<include name="supplierAssignStaffInManageCompanyShareDealDataForAlldeals"/>
+       		
+       		<!-- Supplier assign staff for Country specific in Share deal data -->
+       		<include name="supplierAssignStaffInManageCompanyShareDealDataForCountrySpecific"/>
+       		
+       		<!-- Importer assign staff for All deals in Share deal data -->
+       		<include name="importerAssignStaffInManageCompanyShareDealDataForAlldeals"/>
+       		
+       		<!-- Importer assign staff for Country specific in Share deal data   -->
+       		<include name="importerAssignStaffInManageCompanyShareDealDataForCountrySpecific"/>
+       		
+       		       		
+     </methods>
+   		
+			</class>
+		</classes>
+	</test>
+</suite>

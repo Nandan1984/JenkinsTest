@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+ 
+ 
+<!--  ################################### Create Offer, Add (Product Specification, Documents), Instruction, Packing List 
+  Page Test Cases ##################################### -->
+
+
+<suite name="Create Offer, Specification, Documents, Instruction,  Packing List Test Suite">
+	<test name="Create Offer, Specification, Documents, Instruction,  Packing List Test">
+		<parameter name="browser" value="chrome"/>  
+		 <classes>
+			<class name="cs.qa.te.tests.NegotiationsAddOfferPageTest">
+	 
+	<methods>  
+			<!-- Create Offer -->
+       		<include name="createAddOffer"/>
+       		
+       		<!-- Importer validate the create offer deal display or not -->
+       		<include name="importerConfirmAddofferFromNegotiaitons"/>
+       		
+       		<!-- Supplier add product in Negotiations > Specification -->
+       		<include name="supplierAddProductNegotiationsSpecification"/>
+       		
+       		<!-- Supplier upload Documents in Negotiations > Documents -->
+       		<include name="supplierAddDocDocuments"/>
+       		
+       		<!-- Supplier add data in Negotiations > Schedule and validate from Importer and Forwarder -->
+       		<include name="supplierImporterForwarderNegotationsAddSchedule"/>
+       		
+       		<!-- Supplier add product in ActiveDeals > Specification -->
+       		<include name="supplierAddProductActiveDealsSpecification"/>
+       		
+       		<!-- Supplier upload Documents in ActiveDeals > Documents -->
+       		<include name="supplierActiveDealsAddDocDocuments"/>
+       		
+       		<!-- Supplier add data in Active deals > Schedule and validate from Importer and Forwarder -->
+       		<include name="supplierImporterForwarderActiveDealsAddSchedule"/>
+       		
+       		<!-- Supplier Instruction > Settings -->
+       		<include name="supplierActiveDealsInstructionsSettings"/>
+       		
+       		<!-- Supplier Instruction > CAD > Handelsbanken Bank -->
+       		<include name="supplierActiveDealsInstructionsCADHandelsbankenBank"/>
+       		
+       		<!-- Supplier Instruction > CAD > Nordea Bank -->
+       		<include name="supplierActiveDealsInstructionsCADNordeaBank"/>
+       		
+       		<!--  Supplier Instruction > Product Description -->
+       		<include name="supplierActiveDealsInstructionsProductDescription"/>
+       		
+       		<!-- Supplier Instruction > Packing List Weight Demo -->
+       		<include name="supplierActiveDealsInstructionsPackListWeightDemo"/>
+       		
+       		<!--  Supplier Instruction > EUR1  -->
+       		<include name="supplierActiveDealsInstructionsEUR1"/>
+       		
+       		<!-- Supplier Instruction > CO -->
+       		<include name="supplierActiveDealsInstructionsCO"/>
+       		
+       		<!-- Supplier Instruction > eCO -->
+       		<include name="supplierActiveDealsInstructionsECO"/>
+       		
+       		<!-- Supplier Instruction > eEUR1 -->
+       		<include name="supplierActiveDealsInstructionsEEUR1"/>
+       		
+       		<!-- Supplier Instruction > Phyto  -->
+       		<include name="supplierActiveDealsInstructionsPhyto"/>
+       		
+       		<!-- Supplier Instruction > BL -->
+       		<include name="supplierActiveDealsInstructionsBL"/>
+       		
+       		<!-- Supplier Packing List Data Validate (Pack ID, Species, Grade, Thickness, Width, Container, Truck, Wagon, BL, RFID, Toatal Qty -->
+       		<include name="supplierActiveDealsPackingListDataValidate"/>
+       		
+       		<!-- Supplier Packing List Calculation Table first data Volume -->
+       		<include name="supplierActiveDealsPackingListCalculationVolume"/>
+       		
+       		<!-- Validate Packing list Pack ID data From Forwarder profile -->
+       		<include name="validatePackingListDataWithForwarder"/>
+       		
+       		<!-- Validate Packing list Pack ID data From Importer profile -->
+       		<include name="validatePackingListDataWithImporter"/>
+       		
+       		<!-- Validate 1.8 length Total Qty and Percentage from Supplier profile-->
+       		<include name="supplierActiveDealsPackingListValidateTableQtyAndPercentage"/>
+       		       		
+     </methods>
+   		
+			</class>
+		</classes>
+	</test>
+</suite>

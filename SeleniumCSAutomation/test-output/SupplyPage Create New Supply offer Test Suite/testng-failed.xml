@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="methods" name="Failed suite [SupplyPage Create New Supply offer Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" parallel="methods" name="SupplyPage Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <exclude name="CreateSupply"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="cs.qa.te.tests.SupplyPageTest">
+        <methods>
+          <include name="dealPopUpFreightTest"/>
+          <include name="getSupplierDealPopUpContractAndLogInfoTest"/>
+          <include name="navigateToContratctTest"/>
+          <include name="importerNavigateLogTest"/>
+          <include name="navigateNegotiationsDealPopupTest"/>
+          <include name="importerNavigateContractTest"/>
+        </methods>
+      </class> <!-- cs.qa.te.tests.SupplyPageTest -->
+    </classes>
+  </test> <!-- SupplyPage Test(failed) -->
+  <test thread-count="1" parallel="methods" name="SupplyPage1 Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="CreateSupplyNego"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="cs.qa.te.tests.SupplyPageTest">
+        <methods>
+          <include name="getSupplierDealPopUpContractAndLogInfoTest"/>
+          <include name="navigateToContratctTest"/>
+          <include name="importerNavigateLogTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="importerNavigateContractTest"/>
+          <include name="loginPageTest"/>
+        </methods>
+      </class> <!-- cs.qa.te.tests.SupplyPageTest -->
+    </classes>
+  </test> <!-- SupplyPage1 Test(failed) -->
+</suite> <!-- Failed suite [SupplyPage Create New Supply offer Test Suite] -->

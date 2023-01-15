@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+ 
+ 
+<!--  ################################### Demand Page Test Cases ##################################### -->
+
+
+<suite name="Demand Page Test Suite">
+	<test name="Demand Page Test">
+		<parameter name="browser" value="chrome"/>  
+		 <classes>
+			<class name="cs.qa.te.tests.DemandPageTest">
+	 
+	<methods>  
+			<!-- Create Deamnd Offer -->
+       		<include name="createDemandOfferTest"/>
+       		
+       		<!-- Supplier bid for Demand offer -->
+       		<include name="supplierBidForDemandOffer"/>
+       		
+       		<!-- Importer get supplier counter offer. Accept and Reject price and Volume -->
+       		<include name="importerGetSupplierDemandOfferAndRejectVolumeAndPrice"/>
+       		
+       		<!-- Supplier gets importer counter offer and Accept -->
+       		<include name="supplierGetImporterCounterOfferAndAcceptVolumeAndPrice"/>
+       		
+       		<!-- Supplier add product in ActiveDeals > Specification -->
+       		<include name="importerApproveAndProceed"/>
+       		
+       		       		
+     </methods>
+   		
+			</class>
+		</classes>
+	</test>
+</suite>

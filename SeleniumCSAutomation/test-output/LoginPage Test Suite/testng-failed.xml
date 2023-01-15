@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [LoginPage Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="LoginPage Test1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="cs.qa.te.tests.LoginPageTest">
+        <methods>
+          <include name="clickToLoginLink"/>
+          <include name="loginPageLinkListTest"/>
+          <include name="setUp"/>
+          <include name="passwordTextTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- cs.qa.te.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- LoginPage Test1(failed) -->
+  <test thread-count="5" name="RegisPage Test1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="cs.qa.te.tests.RegistrationPageTest">
+        <methods>
+          <include name="clickToUploadFileTest"/>
+          <include name="selectPositionTest"/>
+          <include name="setUp"/>
+          <include name="clickToLoginLink"/>
+          <include name="tearDown"/>
+          <include name="fillRegistrationDataTest"/>
+        </methods>
+      </class> <!-- cs.qa.te.tests.RegistrationPageTest -->
+    </classes>
+  </test> <!-- RegisPage Test1(failed) -->
+  <test thread-count="5" name="RegisPage Test2(failed)">
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <exclude name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="cs.qa.te.tests.RegistrationPageTest">
+        <methods>
+          <include name="clickToUploadFileTest"/>
+          <include name="selectPositionTest"/>
+          <include name="fillRegistrationDataTest"/>
+        </methods>
+      </class> <!-- cs.qa.te.tests.RegistrationPageTest -->
+    </classes>
+  </test> <!-- RegisPage Test2(failed) -->
+</suite> <!-- Failed suite [LoginPage Test Suite] -->

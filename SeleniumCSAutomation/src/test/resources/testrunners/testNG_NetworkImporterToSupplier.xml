@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+ 
+ 
+<!--  ################################### Importer > Network > Supplier Page Test Cases ##################################### -->
+
+<suite name="Network Importer To Supplier Test Suite">
+	<test name="Validate Importer > Network > Supplier Test1">
+		<parameter name="browser" value="chrome"/>  
+		 <classes>
+			<class name="cs.qa.te.tests.NetworkImporterToSupplierPageTest">
+	 
+	<methods>  
+			<!-- Validate Importer > Network > Supplier > Profile -->
+       		<include name="validateImporterNetworkSupplierProfile"/>
+       		
+       		<!-- Validate Importer > Network > Supplier >Information -->
+       		<include name="validateImporterNetworkSupplierInformation"/>
+       		
+       		<!-- Validate Importer > Network > Supplier >Staff -->
+       		<include name="validateImporterNetworkSupplierStaff"/>
+       		
+       		<!-- Validate Importer > Network > Supplier >Notes & Certificate -->
+       		<include name="validateImporterNetworkSupplierNotesCertificate"/>
+     </methods>
+   		
+			</class>
+		</classes>
+	</test>
+</suite>

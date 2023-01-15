@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RegisPage Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="RegisPage Test1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="cs.qa.te.tests.RegistrationPageTest">
+        <methods>
+          <include name="selectPositionTest"/>
+          <include name="setUp"/>
+          <include name="clickToLoginLink"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- cs.qa.te.tests.RegistrationPageTest -->
+    </classes>
+  </test> <!-- RegisPage Test1(failed) -->
+</suite> <!-- Failed suite [RegisPage Test Suite] -->

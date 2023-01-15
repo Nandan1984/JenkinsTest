@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SupplyPage and Supplier navigates Negotiations]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Importer bid on newly created Supply offer(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="cs.qa.te.tests.SupplyPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="createSupplyOfferTest"/>
+          <include name="tearDown"/>
+          <include name="loginPageTest"/>
+        </methods>
+      </class> <!-- cs.qa.te.tests.SupplyPageTest -->
+    </classes>
+  </test> <!-- Importer bid on newly created Supply offer(failed) -->
+</suite> <!-- Failed suite [SupplyPage and Supplier navigates Negotiations] -->
