@@ -22,14 +22,15 @@ public class LoginPageTest extends BaseTest {
 	public void clickToLoginLink() throws  InterruptedException{
 		
 		Thread.sleep(30000);
-		loginPage.clickLogin();
+		
 		
 	}
 	
 	
 	//For Language settings
 	@Test(enabled = true)
-	public void changeLanguageTest(){
+	public void changeLanguageTest() throws InterruptedException{
+			loginPage.clickLogin();
 			String text = loginPage.getText();
 			
 			System.out.println(text);
