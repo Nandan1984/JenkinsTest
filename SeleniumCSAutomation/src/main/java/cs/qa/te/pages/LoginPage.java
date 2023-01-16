@@ -36,8 +36,8 @@ public class LoginPage {
 	
 	
 	public void clickLogin() throws InterruptedException {
-		Thread.sleep(25000);
 		
+		Thread.sleep(35000);
 		elementUtil.waitForSendKeys(enterU, 8, "Admin");
 		elementUtil.waitForSendKeys(enterP, 8, "admin123");
 		
