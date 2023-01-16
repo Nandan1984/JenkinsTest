@@ -16,6 +16,7 @@ public class DriverFactory {
 	
 	public WebDriver driver;
 	public Properties prop;
+	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<WebDriver>();
 	
 	public WebDriver init_driver(Properties prop) {
 		
@@ -25,7 +26,9 @@ public class DriverFactory {
 		if(browser.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			 //System.setProperty("webdriver.chrome.driver", "C:\\Users\\IND\\Downloads\\driver\\chromedriver.exe");
-			driver = new ChromeDriver();
+			//driver = new ChromeDriver();
+			
+			tlDriver.set(new ChromeDriver());
 		}
 		else if(browser.equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
@@ -35,14 +38,16 @@ public class DriverFactory {
 			System.out.println("please pass the right browser..." + browser);
 		}
 		
-		driver.manage().deleteAllCookies();
-		driver.manage().window().maximize();
-		driver.get(prop.getProperty("url").trim());
+		getDriver().manage().deleteAllCookies();
+		getDriver().manage().window().maximize();
+		getDriver().get(prop.getProperty("url").trim());
 		
-		return driver;
+		return getDriver();
 	}
 	
-	
+	public static synchronized WebDriver getDriver() {
+		return tlDriver.get();
+	}
 	//This method is initialized the properties 
 	
 	public Properties init_prop() {
