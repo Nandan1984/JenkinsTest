@@ -33,17 +33,18 @@ public class LoginPage {
 	
 	//3. Page Actions:
 	
-	
-	
-	public void clickLogin() throws InterruptedException {
+	public void doLogin(String un, String pwd) {
+		//elementUtil.doVisiblityOfElementLocated(username, 8).click();
+		elementUtil.doVisiblityOfElementLocated(enterU, Constants.DEFALUT_TIMEOUT).sendKeys(un); 
+		//elementUtil.doVisiblityOfElementLocated(nextButton, 8).click();
 		
-		Thread.sleep(35000);
-		elementUtil.waitForSendKeys(enterU, 8, "Admin");
-		elementUtil.waitForSendKeys(enterP, 8, "admin123");
-		
+		elementUtil.doVisiblityOfElementLocated(enterP, Constants.DEFALUT_TIMEOUT).sendKeys(pwd);
+	//	elementUtil.doVisiblityOfElementLocated(takeMeIn, 8).click();
 		elementUtil.doVisiblityOfElementLocated(clickLogin, 8).click();
-	
+		
 	}
+	
+	
 	
 	public String getText() {
 		

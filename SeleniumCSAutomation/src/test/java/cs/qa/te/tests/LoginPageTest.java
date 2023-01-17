@@ -14,16 +14,12 @@ import cs.qa.te.utils.Constants;
 
 public class LoginPageTest extends BaseTest {
 	
-
-	
-	
 	// Navigate to the Login page
 	@BeforeClass(enabled = true)
 	public void clickToLoginLink() throws  InterruptedException{
 		
 		Thread.sleep(30000);
-		loginPage.clickLogin();
-		
+		loginPage.doLogin(prop.getProperty("username5").trim(), prop.getProperty("password5").trim());
 	}
 	
 	
