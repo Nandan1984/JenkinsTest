@@ -19,7 +19,7 @@ public class LoginPageTest extends BaseTest {
 	public void clickToLoginLink() throws  InterruptedException{
 		
 		Thread.sleep(30000);
-		loginPage.doLogin(prop.getProperty("username5").trim(), prop.getProperty("password5").trim());
+		loginPage.doLogin(prop.getProperty("username").trim(), prop.getProperty("password").trim());
 	}
 	
 	
