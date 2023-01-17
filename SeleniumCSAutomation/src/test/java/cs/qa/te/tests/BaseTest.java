@@ -4,7 +4,9 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 import cs.qa.te.factory.DriverFactory;
@@ -23,7 +25,7 @@ public class BaseTest {
 	public NegotiationsAddOfferPage addOfferPage;
 	
 		
-	@BeforeTest()
+	@BeforeSuite()
 	public void setUp() {
 		df = new DriverFactory();
 		prop = df.init_prop();
@@ -36,7 +38,7 @@ public class BaseTest {
 	
 	
 	
-	@AfterTest()
+	@AfterSuite()
 	public void tearDown() {
 		driver.quit();
 	}
